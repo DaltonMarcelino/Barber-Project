@@ -1,0 +1,176 @@
+/* pagina no geral */
+
+body{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px 0px #fff;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Parte de cima da pagina */
+
+
+.container {
+    display: flex;
+    justify-content:flex-start; 
+    align-items: center;
+    gap: 110px;
+    padding: 40px;
+    background-color:#212529;
+    height: 50px;
+    width: auto;
+}
+
+.options {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.options:hover {
+    color: rgb(12, 116, 207);
+}
+
+.imagem-logo{
+    max-width: 20%;
+
+}
+
+.footer{
+    background-color:rgb(19, 19, 18) ;
+    height: 50px;
+    width: auto;
+}
+
+/* Tudo acima é estilização geral de todas as páginas */
+
+
+
+/* Tudo a baixo é estilização apenas do arquivo "index.html" */
+
+.amostra{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(248, 248, 248);
+    justify-content: space-around;
+    align-items: center ;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+.imagemf1{
+    display: flex;
+    height: 300px;
+    width: auto;
+    justify-content: space-between;
+    gap: 20;
+    margin: 5%;
+
+}
+
+.imagem-fundo1{
+    display: flex;
+    border: 3px solid transparent;
+    /* border-image: linear-gradient(to right, rgb(94, 94, 112), white, red)1; */
+    border-image-slice: 1;
+    animation: animarBorda 4s linear infinite;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra externa */
+    animation: deslizar 10s linear infinite; /* 20s = tempo total da animação */
+    width: 50%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+  
+
+@keyframes deslizar {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); } /* Move para a esquerda */
+}
+
+@keyframes animarBorda {
+  0%   { border-image-source: linear-gradient(45deg, #000000, #ffffff, #d4af37); } 
+  25%  { border-image-source: linear-gradient(45deg, #d4af37, #000000, #ffffff); } 
+  50%  { border-image-source: linear-gradient(45deg, #ffffff, #d4af37, #8b0000); } 
+  75%  { border-image-source: linear-gradient(45deg, #8b0000, #000000, #d4af37); } 
+  100% { border-image-source: linear-gradient(45deg, #000000, #ffffff, #d4af37); } 
+}
+
+.imagem-fundo1:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+/* Estilização do Container Details */
+
+details {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Abrir/fechar */
+
+details[open] {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilização do Summary (Botão Visível) */
+
+summary {
+  background: linear-gradient(135deg, #212529, #9d50bb);
+  color: white;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.3s ease;
+}
+
+/* Ícone de seta (customizado) */
+
+summary::after {
+  content: "🠓";
+  position: absolute;
+  right: 20px;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+  content: "-";
+}
+
+/* Efeito hover no botão */
+
+summary:hover {
+  background: linear-gradient(135deg, #9d50bb, #212529);
+}
+
+/* Conteúdo interno */
+
+details div {
+  background: #f9f9f9;
+  border-radius: 0 0 10px 10px;
+  border: 1px solid #eee;
+  border-top: none;
+}
+
+/* Remove o marcador padrão no Chrome */
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+
+
+
