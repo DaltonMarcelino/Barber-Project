@@ -14,7 +14,7 @@ body{
 
 .container {
     display: flex;
-    justify-content:flex-start; 
+    justify-content:flex-start;
     align-items: center;
     gap: 110px;
     padding: 40px;
@@ -83,7 +83,7 @@ body{
     flex-shrink: 0;
     object-fit: cover;
 }
-  
+
 
 @keyframes deslizar {
   0% { transform: translateX(0); }
@@ -91,11 +91,11 @@ body{
 }
 
 @keyframes animarBorda {
-  0%   { border-image-source: linear-gradient(45deg, #000000, #ffffff, #d4af37); } 
-  25%  { border-image-source: linear-gradient(45deg, #d4af37, #000000, #ffffff); } 
-  50%  { border-image-source: linear-gradient(45deg, #ffffff, #d4af37, #8b0000); } 
-  75%  { border-image-source: linear-gradient(45deg, #8b0000, #000000, #d4af37); } 
-  100% { border-image-source: linear-gradient(45deg, #000000, #ffffff, #d4af37); } 
+  0%   { border-image-source: linear-gradient(45deg, #000000, #ffffff, #d4af37); }
+  25%  { border-image-source: linear-gradient(45deg, #d4af37, #000000, #ffffff); }
+  50%  { border-image-source: linear-gradient(45deg, #ffffff, #d4af37, #8b0000); }
+  75%  { border-image-source: linear-gradient(45deg, #8b0000, #000000, #d4af37); }
+  100% { border-image-source: linear-gradient(45deg, #000000, #ffffff, #d4af37); }
 }
 
 .imagem-fundo1:hover{
@@ -171,6 +171,48 @@ summary::-webkit-details-marker {
   display: none;
 }
 
+.resu-preco{
+  display: flex;
+  height: 450px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
 
 
+.preco{
+  display: flex;
+  background-color: #e7e6e6;
+  height: 70%;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px;
+  color: #000000;
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tds-prc{
+  color: black;
+  border: #000000 solid 2px;
+  padding: 5px 30px;
+  text-decoration: none;
+  border-radius: 0;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 30px;
+  vertical-align: middle;
+  line-height: 38px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: .1s ease-in-out;
+  transition-property: color, background-color, border-color;
+}
+
+.tds-prc:hover{
+  background-color:#212529 ;
+  color: white;
+}
 
