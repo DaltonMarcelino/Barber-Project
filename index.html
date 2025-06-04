@@ -8,7 +8,10 @@
     <title>Início | JOE-BARBER SHOP</title>
 </head>
 <body>
-    
+
+    <!-- Container fixo -->
+
+    <header>
     <nav class="menu"> 
     <div class="container">
         <a href="../Barber-Project/index.html"> 
@@ -16,11 +19,14 @@
         </a>   
         <a class="options" id="inicio" href="../Barber-Project/index.html">Início</a>
         <a class="options" id="preco" href="../Barber-Project/ps-preco/preco.html">Preço</a>
-        <a class="options" id="horarios" href="../Barber-Project/ps-horario/horarios.html">Horários</a>
+        <a class="options" id="produtos" href="../Barber-Project/ps-horario/horarios.html">Produtos</a>
         <a class="options" id="agendamento" href="../Barber-Project/ps-agendamento/agendamento.html">Agendamento</a>
         <a class="options" id="sobrenos" href="../Barber-Project/ps-sobrenos/sobrenos.html">Sobre nós</a>
     </div>                   
     </nav>
+    </header>
+
+    <!-- Amostra dos serviços realizados -->
 
     <section class="amostra">   
         <div class="item-1">
@@ -44,17 +50,26 @@
             <p>A arte de criar uma imagem pessoal personalizada.</p>
         </div>                                     
     </section>
-    <details>
 
+    <!-- Imagens dos seviços -->
+
+    <details>
         <summary>Serviços</summary>
         <div class="imagemf1">
         <img class="imagem-fundo1" src="img/corte-cabelo.png" >       
         <img class="imagem-fundo1" src="img/corte-cabelo2.png" >
-        <img class="imagem-fundo1" src="img/corte-cabelo3.png" >       
-        <img class="imagem-fundo1" src="img/corte-barba1.png" >
-        <img class="imagem-fundo1" src="img/corte-barba2.png" >       
+        <img class="imagem-fundo1" src="img/corte-cabelo3.png" >        
+        
+        <!-- Repetição de imagens para efeito carrosel -->
+
+        <img class="imagem-fundo1" src="img/corte-cabelo.png" >       
+        <img class="imagem-fundo1" src="img/corte-cabelo2.png" >
+        <img class="imagem-fundo1" src="img/corte-cabelo3.png" >        
+
     </div>
     </details>
+
+    <!-- Preços principais -->
 
     <section class="resu-preco">
         <div class="preco">
@@ -65,27 +80,91 @@
                 <br>Barba...........................................R$ 20<br>
                 <br>Corte + Barbar................................R$ 55<br>               
                 <br>Acabamento + Barba........................R$ 40<br>
-                <br>Corte infantil.................................R$ 30<br>  
+                <br>Corte infantil.................................R$ 30<br><br>  
                 
             </h2>
 
             <a class="tds-prc" href="ps-preco/preco.html">TODOS OS PREÇOS</a>
         
         </div>
-    </section class=>
-        <div>
-            <div>
-
-            </div>
-        </div>
-    
-    
-    <section>
-
     </section>
 
+    <!-- Marcas utilizadas com efeito carrosel -->
 
+    <section class="marca-container">
+  <div class="marca-div">
+    <h2>USAMOS AS MELHORES MARCAS</h2>
+
+    <div class="marca-slider">
+      <div class="marca-slide-track">
+        <img class="l" src="../Barber-Project/img/logo-barbicide.png" alt="barbicide">
+        <img class="l" src="../Barber-Project/img/logo-chefigo.png" alt="chefigo">
+        <img class="l" src="../Barber-Project/img/logo-donalcides.png" alt="donalcides">
+        <img class="l" src="../Barber-Project/img/logo-knucklehead.png" alt="knucklehead">
+        <img class="l" src="../Barber-Project/img/logo-wella.png" alt="wella">
+
+        <!-- Repetição de imagens para efeito carrosel -->
+
+        <img class="l" src="../Barber-Project/img/logo-barbicide.png" alt="barbicide">
+        <img class="l" src="../Barber-Project/img/logo-chefigo.png" alt="chefigo">
+        <img class="l" src="../Barber-Project/img/logo-donalcides.png" alt="donalcides">
+        <img class="l" src="../Barber-Project/img/logo-knucklehead.png" alt="knucklehead">
+        <img class="l" src="../Barber-Project/img/logo-wella.png" alt="wella">
+
+        <img class="l" src="../Barber-Project/img/logo-barbicide.png" alt="barbicide">
+        <img class="l" src="../Barber-Project/img/logo-chefigo.png" alt="chefigo">
+        <img class="l" src="../Barber-Project/img/logo-donalcides.png" alt="donalcides">
+        <img class="l" src="../Barber-Project/img/logo-knucklehead.png" alt="knucklehead">
+        <img class="l" src="../Barber-Project/img/logo-wella.png" alt="wella">
+      </div>
+    </div>
+  </div>
+</section>
+
+     <!-- Imagens do salão barber Joe´s-->
+
+    <section class=image-container>
+        <div class="imagem-fl">
+            <img class="s" src="../Barber-Project/img/salao1.png">
+            <img class="s" src="../Barber-Project/img/salao2.png">
+            <img class="s" src="../Barber-Project/img/salao3.png">
+            <img class="s" src="../Barber-Project/img/salao4.png">
+            <img class="s" src="../Barber-Project/img/salao5.png">
+            <img class="s" src="../Barber-Project/img/salao6.png">
+        </div>           
+    </section>
+
+    <!-- Quadro de horários -->
+
+    <section class="horario">             
+            <h2>Horário de Funcionamento</h2>
+                <ul>
+                    <li><strong>Segunda a Sexta:</strong> 08:00 às 19:00</li>
+                    <li><strong>Sábado:</strong> 08:00 às 15:00</li>
+                    <li><strong>Domingo:</strong> 08:00 às 12:00</li>
+                </ul>    
+    </section>
+
+    <section class="localizacao">
+        <h2>Nos Encontre Aqui<br>⭣ ⭣<br><br></h2>
+        <div class="mapa-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.821694681538!2d-46.65330868452317!3d-23.57658346815359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c809f14e8b%3A0x8ed4c3b5b3a0e6a3!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1717526102284!5m2!1spt-BR!2sbr"
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
     
+    <footer class="txt-ft">
+        <img class="lg-ft" src="../Barber-Project/img/joe-barber.png">
+        <p>© 2024 JOEBARBER. Todos os direitos reservados.</p>
+        
+    </footer>
     
 </body>
 </html>
