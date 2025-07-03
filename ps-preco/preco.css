@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(114, 114, 119);
+}
+h1{
+    color:rgb(8, 8, 7);
+    text-align: center;
+    padding-top: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra preta com deslocamento e desfoque */
+}
+
+.cont-preco{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.preco{
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0.6, 0.5, 0.5, 0.5);
+    background: linear-gradient(120deg, #262a2e, #2c3e50, #434c5e, #262a2e);
+    height: 300px;
+}
+
+pre{
+    font-size: 13pt;
+    justify-items: center;
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: white;
+    height: 500px;
+    max-width: 700px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0.6, 0.5, 0.5, 0.5);
+    background: linear-gradient(120deg, #262a2e, #2c3e50, #434c5e, #262a2e);
+    height: 300px;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    box-shadow: 0px 4px 6px rgba(0.0, 0.0, 0.0, 0.);
+    background-color: rgb(0, 0, 0); /* muda a cor da linha */
+    width: 100%;
+}

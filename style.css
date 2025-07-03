@@ -1,5 +1,7 @@
 /* pagina no geral */
-
+header{
+  text-shadow: 20px 9px 9px rgba(0, 0, 0, 0.5); /* Sombra preta com deslocamento e desfoque */
+}
 body{
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 0px 0px #fff;
@@ -19,9 +21,23 @@ body{
     align-items: center;
     gap: 110px;
     padding: 40px;
-    background-color:#212529;
     height: 50px;
     width: auto;
+    background: linear-gradient(120deg, #262a2e, #2c3e50, #434c5e, #262a2e);
+    background-size: 300% 300%;
+    animation: fundodcr 15s ease infinite;
+}
+
+@keyframes fundodcr {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .options {
@@ -60,6 +76,10 @@ body{
     height: 300px;
     width: 100%;
     text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6{
+  text-shadow: 12px 6px 9px rgba(0, 0, 0, 0.5); /* Sombra preta com deslocamento e desfoque */
 }
 
 .imagemf1{
@@ -109,7 +129,6 @@ details[open] {
 /* Estilização do Summary (Botão Visível) */
 
 summary {
-  background: linear-gradient(135deg, #212529, #9d50bb);
   color: white;
   padding: 15px 20px;
   font-size: 1.1rem;
@@ -119,7 +138,23 @@ summary {
   position: relative;
   border-radius: 10px 10px 0 0;
   transition: all 0.3s ease;
+  background: linear-gradient(120deg, #262a2e, #2c3e50, #434c5e, #262a2e);
+  background-size: 300% 300%;
+  animation: fundodcr 15s ease infinite;
 }
+
+@keyframes fundodcr {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 /* Ícone de seta (customizado) */
 
@@ -138,7 +173,7 @@ details[open] summary::after {
 /* Efeito hover no botão */
 
 summary:hover {
-  background: linear-gradient(135deg, #9d50bb, #212529);
+  background: linear-gradient(135deg, #212529);
 }
 
 /* Conteúdo interno */
